@@ -154,57 +154,6 @@ nav ul li a {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* .card-container {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
- .card {
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  flex: 1 1 calc(25% - 1rem);
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-body {
-  padding: 1rem;
-}
-
-.card-body h3 {
-  font-size: 1.25rem;
-  color: #333;
-}
-
-.card-body .rating {
-  color: #f39c12;
-}
-
-.card-body p {
-  margin: 0.5rem 0;
-  color: #666;
-  width: 100%;
-} 
- 
-
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover img {
-  transform: scale(1.1);
-} */
 
 .card-container {
   margin-top: 4rem;
@@ -415,10 +364,6 @@ footer a:hover {
   .auth-buttons {
     display: none;
   }
-
-  body {
-    overflow: hidden;
-  }
 }
 
 /* About Section Styles */
@@ -624,4 +569,112 @@ footer a:hover {
 .btn-submit:active {
   background-color: #000;
   transform: scale(0.95);
+}
+
+/* Base styles (Mobile-first approach) */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* For Tablets and Above (Min-width 768px) */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: left;
+    padding: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar a {
+    padding: 10px 15px;
+  }
+
+  .main-content {
+    margin-top: 30px;
+  }
+}
+
+/* For Laptops and Above (Min-width 1024px) */
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+
+  .header {
+    text-align: left;
+    padding: 25px;
+  }
+
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .navbar a {
+    padding: 15px 25px;
+  }
+
+  .main-content {
+    margin-top: 40px;
+  }
+}
+
+/* For Desktops and Above (Min-width 1200px) */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 60%;
+  }
+
+  .navbar a {
+    padding: 20px 30px;
+  }
 }
